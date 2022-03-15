@@ -74,20 +74,7 @@ var map = new ol.Map({
 });
 
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_Violacionesalcaldiasmarzo2022_1,
-      colName: 'nomgeo',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-11064639.580057, 2152008.009383, -10997347.817176, 2244373.382094], map.getSize());
+map.getView().fit([-11062136.698335, 2150495.665311, -10994844.935454, 2242853.760492], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
